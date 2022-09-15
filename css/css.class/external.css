@@ -1,0 +1,29 @@
+h3 {
+    background-color:darksalmon;
+    color: blue;
+    text-align: center;
+    margin-left: 300px;
+    padding: 10px;
+    font-size: 50px;
+    text-decoration: underline;
+    width: 400px;
+}
+
+h4 {
+    color: brown;
+    text-align: center;
+    font-size: 30px;
+}
+
+table th,
+tr,
+td {
+    border: 2px solid black;
+    text-align: center;
+}
+
+.conr table {
+    width: 50%;
+    margin: 0 auto;
+    height: 200px;
+}

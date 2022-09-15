@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        .main-box {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+
+        .box-1 {
+            width: 500px;
+            height: 400px;
+            padding: 20px;
+            background-color: aqua;
+
+        }
+
+        .box-2 {
+            width: 500px;
+            height: 400px;
+            padding: 20px;
+            background-color:blue;
+            box-sizing: border-box;
+        }
+        .box-3 {
+            width: 500px;
+            height: 400px;
+            padding: 20px;
+            background-color: aqua;
+            box-sizing: border-box;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-box">
+        <div class="box-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quam maiores ipsa temporibus eveniet
+                provident tempore quo explicabo odit, iusto nostrum, corrupti quidem enim, quasi rerum asperiores error
+                dignissimos molestiae!</p>
+
+        </div>
+        <div class="box-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nulla quis corrupti quod. Illum vel
+                totam accusantium debitis libero nesciunt amet, expedita sunt ratione saepe non perferendis dolores nemo
+                aliquam!</p>
+
+        </div>
+
+        <div class="box-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nulla quis corrupti quod. Illum vel
+                totam accusantium debitis libero nesciunt amet, expedita sunt ratione saepe non perferendis dolores nemo
+                aliquam!</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

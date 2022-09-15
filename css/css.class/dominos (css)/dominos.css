@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+}
+/* .bg{
+    position: sticky;
+} */
+.image {
+    margin-top: 8px;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 25px;
+}
+
+.btn-1 {
+    color: aliceblue;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: red;
+    text-decoration: none;
+}
+
+.mainbg {
+    width: 100%;
+    background-color: rgb(9, 74, 140);
+    display: flex;
+}
+
+
+.order {
+    color: aliceblue;
+    width: 40%;
+    margin-left: 10%;
+
+}
+
+.odd-1 {
+    margin-top: 140px;
+}
+
+#but {
+    border: none;
+    background-color: green;
+    color: aliceblue;
+    font-style: bold;
+    padding: 20px;
+    width: 350px;
+}
+
+.bg-1 {
+    margin-right: 30px;
+    /* padding: 30px; */
+    width: 60%;
+
+}
+
+
+
+.bottom {
+    width: 400px;
+    margin-top: 10px;
+}
+
+.offer {
+    display: flex;
+
+}
+
+.offer img {
+    width: 47%;
+    padding: 5px;
+    margin: 15px 15px;
+
+}
+
+.explore {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    margin-left: 20px;
+}
+
+
+/* .explore A {
+    border-top: 1px solid black;
+    display: flex;
+    text-decoration: none;
+    color: red;
+    padding: 20px;
+    justify-content: center;
+} */
+
+.A {
+    width: 23%;
+    border: 1px solid black;
+    padding-top: 39px;
+    margin: 0px 10px 0px 10px;
+}
+
+.A b {
+    color: red;
+}
+
+.section {
+    display: flex;
+}
+
+.phoneimg {
+    margin-left: 42px;
+    margin-right: 41px;
+}
+
+.appstore {
+    margin: 160px 0px 0px 150px;
+}
+
+.detalis {
+    margin-top: 80px;
+}
+
+.detalis h2 {
+    color: rgb(25, 61, 169);
+}
+
+.footer {
+    background-color: #222e3a;
+    display: flex;
+    justify-content: space-around;
+    height: 400PX;
+}
+
+
+.menu a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.menu-f a{
+  font-size: 30px;
+    color:aliceblue;
+    margin: 10px;
+}
+
+.footer h3{
+color: cadetblue;
+}
+    

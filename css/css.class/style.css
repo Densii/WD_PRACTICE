@@ -1,0 +1,59 @@
+pre {
+    font-size: 20px;
+    color: brown;
+}
+
+#de {
+    text-decoration: underline;
+    padding: 10px;
+
+}
+
+#a {
+    border: solid skyblue 2px;
+    text-align: center;
+    width: 200px;
+}
+
+.ab {
+    color: black;
+
+}
+
+.cd {
+    font-style: italic;
+}
+
+.menu li {
+    color: brown;
+    font-size: 20px;
+}
+
+p>a {
+    padding: 10px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+
+h1+ul {
+    color: blue;
+
+}
+
+.name {
+    font-size: 30px;
+}
+
+
+p~.name {
+    color: red;
+    font-size: 30px;
+}
+
+table th,td,tr{
+    border: 2px solid black;
+    text-align: center;
+    width:50px;
+    margin: 0 auto;
+    height:40px;
+}
