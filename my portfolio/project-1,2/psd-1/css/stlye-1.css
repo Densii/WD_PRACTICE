@@ -1,0 +1,381 @@
+@font-face {
+    font-family: Fredericka the Great;
+    src: url('../font/fan/FrederickatheGreat-Regular.ttf')
+}
+
+@font-face {
+    font-family: Gabelisa;
+    src: url('../font/gabelisa/Gabelisa\ Font\ by\ Keithzo\ \(7NTypes\).otf');
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../font/Montserrat/');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    /* border: 1px solid black; */
+}
+
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+
+.align {
+    align-items: center;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-ab {
+    position: absolute;
+}
+
+/* header-start */
+
+
+.bg-1 {
+    background: linear-gradient(110deg, hwb(60 0% 0%) 60%, wheat 6%);
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+.express {
+    font-size: 12px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: right;
+
+}
+
+span {
+    font-size: 25px;
+}
+
+.icon i {
+    font-size: 40px;
+}
+
+.menu-text ul li {
+    display: inline-block;
+    padding: 5px 36px;
+    font-size: 23px;
+}
+
+
+.menu-text ul li:hover {
+    /* border-bottom: 2px solid black; */
+    /* transform: scale(20px ); */
+    /* transition: 2s; */
+    /* border-width: 1px 10px; */
+    background-color: rgba(165, 42, 42, 0.221);
+    color: rgb(5, 73, 75);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.menu-text {
+    margin-left: 460px;
+}
+
+
+.hungry h2 {
+    font-size: 35px;
+    color: #000000;
+    font-family: "Gabelisa";
+    text-align: center;
+    /* padding: 20px 0; */
+}
+
+.dontwait h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+.leststart p {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.monday {
+    padding: 20px 0;
+    /* text-align: center; */
+}
+
+hr {
+    width: 365px;
+    margin: 0 auto;
+
+}
+
+.monday h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+    width: 150px;
+    margin-left: auto;
+    padding: 10px 0;
+
+}
+
+.monday p {
+
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+    margin-right: auto;
+    padding: 0 10px;
+
+}
+
+.btn button {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 800;
+    font-family: "Montserrat";
+    background-color: yellow;
+    padding: 10px 15px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.header-img {
+    width: 500px;
+}
+
+.header-img img {
+    width: 100%;
+}
+
+/* header-end */
+
+/* section-1 */
+
+.s-pa {
+    padding: 20px 0;
+
+}
+
+.choose h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+    text-align: center;
+    /* padding: 10px 0; */
+
+}
+
+.choose p {
+    width: 80%;
+    font-size: 17px;
+    color: #000000;
+    font-family: "Montserrat";
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.line {
+
+    width: 100%;
+    height: 95px;
+    background-color: #e8e6a9;
+    top: 280px;
+    z-index: -1;
+
+}
+
+.choose-img img {
+    width: 90%;
+    object-fit: cover;
+    transition: transfrom 400ms;
+    transition: all 1s;
+}
+
+
+.img-pa{
+    margin: 40px 0;
+}
+
+.choose-img {
+    text-align: center;
+    
+}
+
+.choose-img:hover img {
+    transform: scale(1.1 );
+    /* transform: rotate(360deg); */
+    /* transform: skew(20deg); */
+    /* transform: translate(20px,10%); */
+}
+
+.lorem {
+    text-align: center;
+}
+
+.lorem p{
+    padding: 10px 0;
+}
+
+.btn-1 {
+    text-align: center;
+}
+
+.btn-1 button {
+    background-color: yellow;
+    border: none;
+    padding: 10px 15px;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "Montserrat";
+    margin: 10px 0;
+}
+
+
+/* section-1 end  */
+
+/* section-2 :start */
+
+.discover p{
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #000000;
+    /* font-weight: 700; */
+    font-family: "Montserrat"; 
+    text-align: center; 
+}
+
+.upcoming-img {
+    width: 70%;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+
+.upcoming-img img{
+    width: 100%;
+    object-fit: cover;
+    transition: transfrom 400ms;
+
+}
+
+.upcoming-img:hover img{
+    background-color:rgba(16, 146, 155, 0.41);
+    padding: 5px;
+    box-shadow: 5px 5px rgba(11, 123, 175, 0.457);
+    color: aliceblue;
+}
+
+/* section-2 end */
+   
+
+/* section-3 :start */
+
+.s-3pa{
+    padding: 50px;
+}
+
+.pasta img{
+    width: 80%;
+}
+
+.pasta{
+ z-index: -1;   
+}
+
+.pasta-text h3{
+    color: aliceblue;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    width: 212px;
+    margin: 40px;
+}
+
+.chili{
+    z-index:-1;
+}
+
+.chili img{
+    width: 90%;
+}
+
+
+.chili-text h3{
+color:aliceblue;
+font-size: 25px;
+text-transform: uppercase;
+font-family: "Montserrat";
+width: 175px;
+margin: 20px;
+}
+
+/* section-3 :end */
+
+/* section-4 :start */
+
+.s-4pa{
+    padding: 50px;
+}
