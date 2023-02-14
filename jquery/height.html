@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style>
+        div p{
+            background-color: cadetblue;
+            width: 100px;
+            height: 50px;
+            margin: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        /* .active{
+            color: bisque;
+        } */
+    </style>
+
+</head>
+
+<body>
+<div>
+    <p>jay</p>
+    <p>shree</p>
+    <p>krishna</p>
+</div>
+
+
+    <script>
+
+        $("p").one("click", function () {
+            // console.log($( this ).height(50));
+            // console.log($( this ).height());
+            //   $( this ).height(50);
+            $(this).height(100).css({
+                cursor: "auto",
+                backgroundColor: "pink",
+                color:"blue"
+    
+            });
+        });
+
+       
+
+    </script>
+
+</body>
+
+</html>
