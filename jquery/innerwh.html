@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* background-color: blueviolet;
+            width: 100px;
+            padding: 10px;
+            height: 100px;
+            display: inline-block;
+            cursor: pointer; */
+            /* width: 60px;
+            padding: 10px;
+            height: 50px;
+            float: left;
+            margin: 5px;
+            background: red;
+            cursor: pointer; */
+        }
+
+        h1 {
+            width: 60px;
+            padding: 10px;
+            height: 50px;
+            float: left;
+            margin: 5px;
+            background: rgb(0, 238, 255);
+            cursor: pointer;
+        }
+
+        .mod {
+            background: salmon;
+            cursor: default;
+            color:blue;
+        }
+
+        /* img{ */
+        /* width: 100%; */
+        /* } */
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- <img src="4f28755c681c7e5a5aa09697ea727c73.jpg" alt=""> -->
+
+
+    <!-- <div class="BOX"></div>
+    <div class="BOX"></div>
+    <div class="BOX"></div>
+    <div class="BOX"></div>
+    <div class="BOX"></div> -->
+
+
+    <div class="box">
+        <h1>dd</h1>
+        <h1>d</h1>
+        <h1>d</h1>
+        <h1>d</h1>
+    </div>
+
+
+    <script>
+            var mode = 50;
+            $( "h1" ).one( "click", function() {
+          $( this ).innerHeight( mode ).addClass( "mod" );
+          mode -= 8;
+        });
+
+
+        var modWidth = 60;
+        $("h1").one("click", function () {
+            $(this).innerWidth(modWidth).addClass("mod");
+            modWidth -= 8;
+
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
