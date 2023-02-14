@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btn-onclick</title>
+
+
+ 
+</head>
+
+<body>
+
+<img src="img/" alt="">
+
+    <!-- <img src="img/colour.png"  alt=""> -->
+    
+    <img src="img/bulb-1.png" width="300px" alt="" id="bulb">       
+    <button id="d1" class="btn11" onclick="bulb_on()">trun on the light</button>
+    <button id="d2" class="btn-11" onclick="bulb_off()">trun of the light</button>
+    
+
+
+    <script> 
+        // console.log(document.body.style.backgroundColor="grey");
+        // console.log(document.btn11.style.color="red");
+        function bulb_on() {
+            document.getElementById("bulb").src='img/colour.png';
+            document.getElementById("bulb").style.width="300px" ;
+            
+        }
+        function bulb_off() {
+            document.getElementById("bulb").src='img/bulb-1.png';
+            document.getElementById("bulb").style.width="300px" ;
+            
+        }
+    </script>
+
+
+</body>
+
+</html> 
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="img/colour.png" alt="">
+    <img src="img/bulb-1.png" width="100px" id="slider-img" alt="">
+    <button id="changeclr">Turn On Bulb</button>
+    <button id="turnoffbulb">Turn Off Bulb</button>
+    <script>
+        let ImageData = document.getElementById('slider-img');
+        document.getElementById("changeclr").addEventListener("click", function () {
+            ImageData.src="img/colour.png"
+            ImageData.style.width="100px"
+        })
+        document.getElementById("turnoffbulb").addEventListener("click", function () {
+            ImageData.src="img/bulb-1.png"
+            ImageData.style.width="100px"
+        })
+
+    </script>
+</body>
+
+</html> -->
