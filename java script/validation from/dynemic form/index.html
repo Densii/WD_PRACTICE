@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .form {
+            background-color: #444f62;
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            padding: 50px 0;
+            border: 2px solid black;
+        }
+
+        .border {
+            margin: 5px;
+            padding: 0 5px ;
+            display: inline-block;
+            /* border: 2px solid #d0d5d1; */
+            /* box-shadow: 5px 5px 5px black; */
+        }
+
+        .form button {
+            margin: 5px;
+            padding: 5px 30px;
+            border: 2px solid #444f62;
+            outline: 2px solid white;
+            outline-offset: 10px;
+        }
+
+
+        .form .border input {
+            margin: 10px;
+            padding: 5px 50px 5px 10px;
+            /* border: none; */
+            outline: 2px solid white;
+            outline-offset: 10px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            /* box-shadow: 5px 5px 5px black; */
+
+        }
+
+      
+        .form i {
+            color: #d0d5d1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row align ">
+            <div class="col-12">
+                <form action="post">
+
+                    <div class="form" id="my-form">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="border">
+                            <input type="text" placeholder="name" class="name" required><br>
+                        </div>
+                        <br>
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="border">
+                            <input type="text" placeholder="phone no." class="p-no." required><br>
+                        </div>
+                        <br>
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="border">
+                            <input type="email" placeholder="email" class="email" required><br>
+                        </div>
+                        <br>
+                        <i class="fa-solid fa-message"></i>
+                        <div class="border">
+                            <input type="text" placeholder=" your message" class="msg" required><br>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="border">
+                            <button onclick="checkvalidation()">sumbit</button>
+                        </div>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkvalidation() {
+            event.preventDefault();   // The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
+            let inputfiled = document.getElementById("my-form").querySelectorAll("[required]")
+            // console.log(inputfiled);
+            for (let index = 0; index < inputfiled.length; index++) {
+
+                var n = document.createElement("span");
+                n.style.color = "white";
+                n.style.margin = " 0 10px";
+                var d = document.createTextNode("this is field required");
+                n.appendChild(d);
+
+                if (inputfiled[index].value == "") {
+                    if (inputfiled[index].nextElementSibling.nodeName == "SPAN") {
+                        inputfiled[index].nextElementSibling.remove()
+                    }
+                    inputfiled[index].after(n);
+                } else {
+                    if (inputfiled[index].nextElementSibling.nodeName == 'SPAN') {
+                        inputfiled[index].nextElementSibling.remove()
+                    }
+                }
+            }
+        }
+        // var n = document.createElement("div");
+        // console.log(n);
+        // var d = document.createTextNode("densi gandi che");
+        // console.log(d);
+        // n.appendChild(d);
+
+
+    </script>
+</body>
+
+</html>
