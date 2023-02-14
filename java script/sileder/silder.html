@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sileder</title>
+
+    <style>
+        
+        
+        
+        .swipe {
+            overflow-x:hidden;
+        }
+
+        img{
+            width: 500px;
+            animation: siled 3s alternate;
+            position: absolute;
+            /* height: fit-content; */
+        }
+        /* .ert{
+            width: 500px;
+           animation: hello 3s alternate;
+           position: absolute;
+            
+        } */
+
+        /* .denu{
+             width: 500px;
+            animation: densi 3s alternate;
+            position: absolute;
+           
+        } */
+
+        /* .nakum-1{
+             width: 500px;
+            animation: nakum 3s alternate;
+            position: absolute;
+           
+        }
+     */
+    
+
+        @keyframes siled {
+
+            to {
+                top: 0;
+                /* border-radius: 50%; */
+                /* transform: rotate(360deg); */
+            }
+
+            from {
+                top: 800px;
+                /* border-radius: 0%; */
+            }
+        }
+        /* @keyframes hello { */
+            
+            /* to { */
+                right: 0;
+                /* transform: scale(-2); */
+            /* } */
+            
+            /* from { */
+                /* right: 500px; */
+                /* transform: scale(-2); */
+
+            /* } */
+        /* } */
+     /* @keyframes densi { */
+        
+            /* to { */
+            /* left: 0px; */
+            /* transform: skew(20deg); */
+            /* } */
+        
+            /* from { */
+              /* left: -600px; */
+            /* } */
+        /* }  */
+
+        /* @keyframes nakum { */
+        
+        /* to { */
+        /* top:900px; */
+        /* transform: ; */
+        /* } */
+    
+        /* from { */
+          /* top: 0; */
+        /* } */
+    /* }  */
+
+
+
+        </style>
+</head>
+
+<body>
+
+        <div class="swipe">
+            <img src="img/33.jpg" alt="" class="sky">
+    
+            <img src="img/11.jpg" alt="" class="sky ert">
+            <img src="img/44.jpg" alt="" class="sky denu">
+            <img src="img/55.png" alt="" class="sky nakum-1">
+            <img src="img/22.jpg" alt="" class="sky">
+        </div>
+    
+    <script>
+
+        let ImageData = document.getElementsByClassName("sky");
+        let no = 0;
+
+        function slider() {
+            console.log(ImageData);
+            for (let index = 0; index < ImageData.length; index++) {
+                // console.log(ImageData[index])
+                ImageData[index].style.display="none"   
+                // document.getElementsByClassName('sky')[index].style.display = "none"
+            }
+
+
+            if (no >= ImageData.length) {
+                no = 0
+            }
+
+            ImageData[no].style.display = "block"
+            console.log("no :", no);
+            no++;
+        }
+        setInterval(slider, 3000);
+
+    </script>
+</body>
+
+</html>
