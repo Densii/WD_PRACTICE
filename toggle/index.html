@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font-awsome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    .list {
+  display: none;
+}
+
+.list {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  right: -100%;
+  transition: all 0.6s ease-in-out;
+  background: red;
+  display: block;
+}
+.list.show {
+  right: 0;
+}
+
+
+
+@media (min-width: 992px) {
+  .bar {
+    display: none;
+  }
+  .list {
+    position: static;
+    transition: none;
+    background: transparent;
+    display: block;
+  }
+  .list ul li {
+    display: inline-block;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .list ul li a {
+    color: black;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row justify align">
+                <div class="col">
+                    <div class="logo">
+                        <img src="./image/download.webp" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="list">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">buy</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="bar">
+                        <i class="fa-solid fa-2 fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+        /* background-color: ; */
+        const btn = document.querySelector(".bar");
+        const navbar = document.querySelector(".list");
+        // const anyone = document.querySelectorAll(".list li");
+
+
+        btn.addEventListener("click", () => {
+            // console.log("hello");
+            btn.classList.toggle("show");
+            navbar.classList.toggle("show");
+        });
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
