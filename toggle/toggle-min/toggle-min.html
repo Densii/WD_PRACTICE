@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- only-custom-css -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            /* border: 1px solid rgb(36, 246, 36); */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .align {
+            align-items: center;
+        }
+
+        .justify {
+            justify-content: space-between;
+        }
+
+        /* header-start */
+
+
+        nav {
+            padding: 10px 0 0 0;
+        }
+
+        .logo img {
+            width: 100%;
+            display: block;
+        }
+
+
+
+        /* header-toggle */
+        .list {
+            display: none;
+        }
+
+        .list {
+            width: 100%;
+            position: fixed;
+            top: 77px;
+            left: -100%;
+            transition: all 0.6s ease-in-out;
+            background-color: #d3ab72;
+            display: block;
+            height: 100%;
+            z-index: 999;
+        }
+
+        .list.show {
+            left: 0;
+        }
+
+        .list ul li {
+            display: block;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+
+        .contact {
+            display: none;
+        }
+
+        .bar {
+            color: #E3B576;
+            font-size: 30px;
+        }
+
+
+
+
+        /* // Medium devices (tablets, 768px and up) */
+
+        @media (min-width: 768px) {
+            .conatiner {
+                width: 740px;
+                margin: 0 auto;
+            }
+
+
+            /* ==========togggle-menu ============ */
+
+            .bar {
+                display: none;
+            }
+
+            .list {
+                position: static;
+                transition: none;
+                background: transparent;
+                display: inline-block;
+                width: auto;
+            }
+
+            .list ul li {
+                display: inline-block;
+            }
+
+            .contact {
+                display: inline-block;
+            }
+
+            
+            .logo img {
+                width: 93%;
+                display: block;
+            }
+
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <div class="row align justify">
+
+                <div class="logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+
+                <div class="list">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact">
+                    <p>Get Free Consultation</p>
+                    <a href=" tel:+1-202-555-0118 ">+1-202-555-0118</a>
+                </div>
+
+
+                <div class="bar">
+                    <i class="fa-solid fa-2 fa-bars"></i>
+                </div>
+
+            </div>
+
+        </nav>
+
+
+    </header>
+</body>
+
+</html>
