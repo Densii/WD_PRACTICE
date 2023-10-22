@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- custom-css -->
+
+
+    <style>
+        .bar {
+            display: none;
+        }
+    </style>
+
+    <!-- responsive-css-screen -->
+
+
+ @media (max-width: 768px) {
+
+
+    /* ======== toggle menu */
+
+    .bar {
+        display: block;
+        font-size: 40px;
+        padding: 0 10px;
+        color: #fb6719;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .list {
+        position: fixed;
+        top: 65px;
+        left: -100%;
+        transition: all 0.6s ease-in-out;
+        background-color: #be6f45fb;
+        display: block;
+        width: 100%;
+        z-index: 999;
+        height: 100%;
+    }
+
+    .list ul li {
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .list ul .light {
+        padding: 10px 0;
+    }
+
+    .list ul li a {
+        font-size: 20px;
+        color: white;
+
+    }
+
+    .list.show {
+        left: 0;
+    }
+
+    ul li::after {
+        display: none;
+    } 
+
+
+    /* ================= */
+
+
+ }
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="bar">
+        <i class="fa-solid fa-2 fa-bars"></i>
+    </div>
+
+
+
+
+  <!-- toggle menu -->
+
+  <script>
+
+    const btn = document.querySelector(".bar");
+    const navbar = document.querySelector(".list");
+    const anyone = document.querySelectorAll(".list li");
+
+
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("show");
+        navbar.classList.toggle("show");
+    });
+
+    let chokdi = document.querySelector(".bar");
+    let way = document.querySelector(".fa-bars");
+    chokdi.onclick = function () {
+        if (way.classList.contains("fa-bars")) {
+            way.classList.replace("fa-bars", "fa-times");
+        } else {
+            way.classList.replace("fa-times", "fa-bars");
+        }
+    }
+
+
+    anyone.forEach(element => {
+        element.addEventListener("click", () => {
+            navbar.classList.toggle("show");
+            way.classList.replace("fa-times", "fa-bars");
+
+        })
+    });
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
