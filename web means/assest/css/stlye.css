@@ -1,0 +1,244 @@
+    /* nav-1-sart */
+.location {
+    border: 1px solid gray;
+}
+
+body {
+    /* line-height: 0; */
+}
+
+/* ================================================= */
+/* header */
+
+.navbar-nav li:hover {
+    border-bottom: 2px solid rgb(118, 101, 39);
+}
+
+/* =============================================== */
+
+/* section-1 */
+
+.hr {
+    border-bottom: 3px solid rgb(118, 101, 39);
+    margin: 0 auto;
+    width: 4%;
+}
+
+.pos-rel {
+    position: relative;
+
+}
+
+.pos-ab {
+    position: absolute;
+    z-index: 999;
+}
+
+.body-tx {
+    left: 71px;
+    top: 466px;
+}
+
+.skin-tx {
+    bottom: 267px;
+    left: 417px;
+}
+
+.remove-tx {
+    bottom: 10px;
+    left: 427px;
+}
+
+.face-tx {
+    bottom: 10px;
+    right: 240px;
+}
+
+/* ================================================== */
+
+/* section-2 */
+
+.nose {
+    border-left: 1px solid rgba(128, 128, 128, 0.885);
+}
+
+.line {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.88);
+}
+
+.sec-2 {
+    background-color: rgba(224, 218, 218, 0.505);
+}
+
+/* ============================================= */
+
+/* section-4 */
+
+.request-tx h4 {
+    color: rgb(118, 101, 39);
+    padding: 20px 0;
+}
+
+.input-bb {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.input-bb button {
+    background-color: rgb(125, 136, 54);
+    border: 1px solid rgb(125, 136, 54);
+    color: white;
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+
+/* =========================================== */
+
+.estica {
+    background-color: rgb(125, 136, 54);
+}
+
+/* ========================================================== */
+
+
+
+
+@media (min-width: 576px) {
+    .conatiner {
+        width: 540px;
+        margin: 0 auto;
+    }
+
+    .body-tx {
+        top: 614px;
+    }
+}
+
+
+
+
+/* Medium devices (tablets, 768px and up)  */
+@media (min-width: 768px) {
+    .conatiner {
+        width: 740px;
+        margin: 0 auto;
+    }
+
+    .body-tx {
+        top: 526px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .conatiner {
+        width: 940px;
+        margin: 0 auto;
+    }
+
+
+    /* nav-1-sart */
+    .location {
+        border: 1px solid gray;
+    }
+
+    body {
+        /* line-height: 0; */
+    }
+
+    /* ================================================= */
+    /* header */
+
+    .navbar-nav li:hover {
+        border-bottom: 2px solid rgb(118, 101, 39);
+    }
+
+    /* =============================================== */
+
+    /* section-1 */
+
+    .hr {
+        border-bottom: 3px solid rgb(118, 101, 39);
+        margin: 0 auto;
+        width: 4%;
+    }
+
+    .pos-rel {
+        position: relative;
+
+    }
+
+    .pos-ab {
+        position: absolute;
+        z-index: 999;
+    }
+
+    .body-tx {
+        bottom: 20px;
+        left: 71px;
+    }
+
+    .skin-tx {
+        bottom: 267px;
+        left: 417px;
+    }
+
+    .remove-tx {
+        bottom: 10px;
+        left: 427px;
+    }
+
+    .face-tx {
+        bottom: 10px;
+        right: 240px;
+    }
+
+    /* ================================================== */
+
+    /* section-2 */
+
+    .nose {
+        border-left: 1px solid rgba(128, 128, 128, 0.885);
+    }
+
+    .line {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.88);
+    }
+
+    .sec-2 {
+        background-color: rgba(224, 218, 218, 0.505);
+    }
+
+    /* ============================================= */
+
+    /* section-4 */
+
+    .request-tx h4 {
+        color: rgb(118, 101, 39);
+        padding: 20px 0;
+    }
+
+    .input-bb {
+        text-align: center;
+        margin: 12px 0;
+    }
+
+    .input-bb button {
+        background-color: rgb(125, 136, 54);
+        border: 1px solid rgb(125, 136, 54);
+        color: white;
+        padding: 5px 30px;
+        border-radius: 5px;
+    }
+
+    /* =========================================== */
+
+    .estica {
+        background-color: rgb(125, 136, 54);
+    }
+
+    /* ========================================================== */
+
+
+
+}
