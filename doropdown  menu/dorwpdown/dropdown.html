@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript FAQ Slider Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'roboto', sans-serif;
+            color: #666;
+            font-size: 16px;
+            background: #f9f9f9;
+            line-height: 1.6em;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        #container {
+            width: 60%;
+            margin: 150px auto;
+            overflow: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            height: 40px;
+            background: #6bb170;
+            color: white;
+            text-align: center;
+            padding-top: 13px;
+        }
+
+        .faq li {
+            padding: 20px;
+        }
+
+        .faq li.q {
+            background: #4FC2E;
+            font-weight: bold;
+            font-size: 120%;
+            border: 1px #ddd solid;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .faq li.a {
+            background: #3BB0D6;
+            display: none;
+            color: #fff;
+        }
+
+        .faq li.q i {
+            float: right;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .faq li.q.rotate i::before {
+            content: "\f068";
+            /* Cross icon */
+        }
+
+        .faq li.q i::before {
+            content: "\f067";
+            /* Plus icon */
+        }
+
+        @media (max-width:800px) {
+            #container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>JavaScript FAQ Slider Demo</h1>
+        <div class="title">
+            <h3>FAQ Slider Using JavaScript</h3>
+        </div>
+        <ul class="faq">
+            <li class="q"> Lorem ipsum dolor sit amet, consectetur adipiscing elit? <i class="fas fa-plus"></i></li>
+            <li class="a">Suspendisse sit amet elit lacinia, feugiat magna at, luctus massa. Aliquam sodales dictum
+                nulla. consectetur adipiscing elit.</li>
+
+            <li class="q"> Lorem ipsum dolor sit amet, consectetur adipiscing elit? <i class="fas fa-plus"></i></li>
+            <li class="a">Suspendisse sit amet elit lacinia, feugiat magna at, luctus massa. Aliquam sodales dictum
+                nulla. consectetur adipiscing elit.</li>
+        </ul>
+    </div>
+
+    <script>
+        // Accordian Action
+        var action = 'click';
+        var speed = 500;
+
+        // Get all question elements
+        var questions = document.querySelectorAll('.q');
+
+        // Attach click event listeners to each question
+        questions.forEach(function (question) {
+            question.addEventListener(action, function () {
+                var isOpen = this.classList.contains('rotate');
+                var answer = this.nextElementSibling;
+
+                // Reset all other questions
+                questions.forEach(function (q) {
+                    q.classList.remove('rotate');
+                    q.nextElementSibling.style.display = 'none';
+                });
+
+                // Open or close the current question accordingly
+                if (!isOpen) {
+                    this.classList.add('rotate');
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
