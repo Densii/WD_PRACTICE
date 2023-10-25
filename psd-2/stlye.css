@@ -1,0 +1,16 @@
+.list{
+    background-color:  #c87e6b;
+}
+
+
+.bg-1{
+    background-image: url('./img/Background\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.sold-bg{
+    background-color: #765a33;
+}
